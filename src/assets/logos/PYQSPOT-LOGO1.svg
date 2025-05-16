@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="4.85183in" height="2.74572in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3018.6 1708.27"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="637" font-variant="normal" class="str1" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+	<font-face 
+		font-family="Franklin Gothic Heavy">
+		<font-face-src>
+			<font-face-name name="Franklin Gothic Heavy"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="P" horiz-adv-x="643" d="M266 242l0 -242 -208 0 0 667 284.666 0c70.9998,0 125,-8.1665 161.999,-24.4995 36.8336,-16.334 66.1669,-41.1667 87.8335,-74.8332 21.6666,-33.5009 32.5004,-71.1674 32.5004,-112.834 0,-63.6662 -22.1674,-115 -66.3335,-154.167 -44.1671,-39.1667 -103.167,-58.6667 -177,-58.6667l-115.667 0zm-3.00048 143l68.0003 0c59.9994,0 90.0001,22.5005 90.0001,67.5006 0,42.3327 -27.6666,63.4996 -83.1673,63.4996l-74.8332 0 0 -131z"/>
+   <glyph unicode="Y" horiz-adv-x="591" d="M611.334 667l-208.333 -385 0 -282 -199.001 0 0 282 -224.333 385 223.833 0 117.333 -219.333 111.667 219.333 178.833 0z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Franklin Gothic Heavy";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str1 {stroke-width:0.77;stroke-miterlimit:2.61313}
+    .str0 {stroke:#FEFEFE;stroke-width:1.87;stroke-miterlimit:2.61313}
+    .str2 {stroke:white;stroke-width:1.87;stroke-miterlimit:2.61313}
+    .fil0 {fill:#FEFEFE}
+    .fil1 {fill:red}
+    .fnt0 {font-weight:normal;font-size:2411.49px;font-family:'Franklin Gothic Heavy'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1643123243184">
+   <path class="fil0 str0" d="M600.46 1123.76l0 583.58 -599.53 0 0 -1706.4 735.44 0c129.97,0 290.16,10.04 410.47,63.27 97.26,43.03 175.48,109.3 233.14,198.69 58.37,90.47 86.2,191.01 86.2,298.64 0,161.31 -55.16,300.86 -176.44,408.41 -128.14,113.64 -291.18,153.8 -459.32,153.8l-229.96 0zm1880.97 -133.03l0 716.61 -577.83 0 0 -715.78 -577.22 -990.62 654.32 0 252.53 472.07 240.34 -472.07 543.45 0 -535.6 989.79zm-1888.2 -309.75l115.01 0c41.67,0 98.74,-4.91 133.39,-30.9 27.02,-20.26 34.67,-50.23 34.67,-82.91 0,-29.51 -6.52,-57.35 -30.85,-75.93 -31.12,-23.77 -83.13,-28.23 -120.74,-28.23l-131.49 0 0 217.97z"/>
+  </g>
+  <text x="-89.97" y="1658.37"  class="fil1 str2 fnt0">PY</text>
+ </g>
+</svg>

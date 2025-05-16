@@ -1,0 +1,11 @@
+.card {
+  border: none;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.card .card-body {
+  min-height: 150px;
+}
