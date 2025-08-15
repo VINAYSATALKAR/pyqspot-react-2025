@@ -70,7 +70,7 @@ export const branchData = [
       {
         label: 'Fourth Year',
         image: '/images/beaids.webp',
-        link: '/beai',
+        link: '/beaids',
       },
     ],
   },

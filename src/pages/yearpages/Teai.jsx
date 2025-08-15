@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import dayjs from "dayjs";
+import WhatsAppCommunity from "../../components/WhatsAppCommunity";
 
 // ✅ Set API Base URL using Environment Variable
 const API_BASE_URL = import.meta.env.VITE_API_URL || "https://backend-server-sv2t.onrender.com";
@@ -11,6 +12,7 @@ const thirdYearAIData = {
       exams: {
         "May-June 2024": { endsem: { releaseTime: "2024-06-04T18:00:00" } },
         "Oct-Nov 2023": { insem: { releaseTime: "2024-06-04T18:00:00" } },
+        "Oct-Nov 2024": { insem: { releaseTime: "2025-08-18T12:00:00" } },
       },
     },
     {
@@ -18,6 +20,7 @@ const thirdYearAIData = {
       exams: {
         "May-June 2024": { endsem: { releaseTime: "2024-06-12T18:00:00" } },
         "Oct-Nov 2023": { insem: { releaseTime: "2024-06-06T18:00:00" } },
+        "Oct-Nov 2024": { insem: { releaseTime: "2025-08-19T12:00:00" } },
       },
     },
     {
@@ -25,6 +28,7 @@ const thirdYearAIData = {
       exams: {
         "May-June 2024": { endsem: { releaseTime: "2024-06-12T18:00:00" } },
         "Oct-Nov 2023": { insem: { releaseTime: "2024-06-06T18:00:00" } },
+        "Oct-Nov 2024": { insem: { releaseTime: "2025-08-20T12:00:00" } },
       },
     },
     {
@@ -32,6 +36,7 @@ const thirdYearAIData = {
       exams: {
         "May-June 2024": { endsem: { releaseTime: "2024-06-12T18:00:00" } },
         "Oct-Nov 2023": { insem: { releaseTime: "2024-06-06T18:00:00" } },
+        "Oct-Nov 2024": { insem: { releaseTime: "2025-08-21T12:00:00" } },
       },
     },
   ],
@@ -39,25 +44,32 @@ const thirdYearAIData = {
     {
       subject: "Data Science",
       exams: {
-        "May-June 2024": { insem: { releaseTime: "2024-06-17T18:00:00" } },
+        "May-June 2024": { 
+          insem: { releaseTime: "2024-06-17T18:00:00" },
+          endsem:{releaseTime:"2025-05-24T13:00:00"}
+       },
       },
     },
     {
       subject: "Cyber Security",
       exams: {
-        "May-June 2024": { insem: { releaseTime: "2024-06-17T18:00:00" } },
+        "May-June 2024": { insem: { releaseTime: "2024-06-17T18:00:00" },
+          endsem:{releaseTime:"2025-05-26T13:00:00"} },
       },
     },
     {
       subject: "Artificial Neural Network",
       exams: {
-        "May-June 2024": { insem: { releaseTime: "2024-06-17T18:00:00" } },
+        "May-June 2024": { insem: { releaseTime: "2024-06-17T18:00:00" } ,
+          endsem:{releaseTime:"2025-05-28T13:00:00"}},
       },
     },
     {
       subject: "Cloud Computing (Elective)",
       exams: {
-        "May-June 2024": { insem: { releaseTime: "2024-06-17T18:00:00" } },
+        "May-June 2024": { insem: { releaseTime: "2024-06-17T18:00:00" }
+      ,
+          endsem:{releaseTime:"2025-05-31T13:00:00"} },
       },
     },
   ],
@@ -78,7 +90,7 @@ async function openRazorpayCheckout(year, subject, examType, examPeriod) {
     const orderResponse = await fetch(`${API_BASE_URL}/razorpay-order`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: 19, currency: "INR", year, subject, examType, examPeriod }),
+      body: JSON.stringify({ amount: 21, currency: "INR", year, subject, examType, examPeriod }),
     });
 
     const orderData = await orderResponse.json();
@@ -217,6 +229,7 @@ const ThirdYearAI = () => (
     <h1 className="text-2xl font-bold mb-8">Third Year - AI & DS</h1>
     <PaperTable semName="Semester 5" data={thirdYearAIData.sem5} />
     <PaperTable semName="Semester 6" data={thirdYearAIData.sem6} />
+    <WhatsAppCommunity/>
   </div>
 );
 

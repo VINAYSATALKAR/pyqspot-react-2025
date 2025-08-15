@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import dayjs from "dayjs";
+import WhatsAppCommunity from "../../components/WhatsAppCommunity";
 
 // ✅ Set API Base URL using Environment Variable
 const API_BASE_URL = import.meta.env.VITE_API_URL || "https://backend-server-sv2t.onrender.com";
@@ -15,6 +16,9 @@ const teComputerData = {
         "Oct-Nov 2023": {
           insem: { releaseTime: "2024-04-20T18:00:00" },
         },
+        "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-18T12:00:00" },
+        },
       },
     },
     {
@@ -25,6 +29,8 @@ const teComputerData = {
         },
         "Oct-Nov 2023": {
           insem: { releaseTime: "2024-04-20T18:00:00" },
+        }, "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-19T12:00:00" },
         },
       },
     },
@@ -36,6 +42,8 @@ const teComputerData = {
         },
         "Oct-Nov 2023": {
           insem: { releaseTime: "2024-04-20T18:00:00" },
+        }, "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-20T12:00:00" },
         },
       },
     },
@@ -47,6 +55,8 @@ const teComputerData = {
         },
         "Oct-Nov 2023": {
           insem: { releaseTime: "2024-04-20T18:00:00" },
+        }, "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-21T12:00:00" },
         },
       },
     },
@@ -58,6 +68,8 @@ const teComputerData = {
         },
         "Oct-Nov 2023": {
           insem: { releaseTime: "2024-04-20T18:00:00" },
+        }, "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-22T12:00:00" },
         },
       },
     },
@@ -68,6 +80,7 @@ const teComputerData = {
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-12T18:00:00" },
+          endsem: { releaseTime: "2025-05-24T13:00:00" },
         },
       },
     },
@@ -76,6 +89,7 @@ const teComputerData = {
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-12T18:00:00" },
+          endsem: { releaseTime: "2025-05-26T13:00:00" },
         },
       },
     },
@@ -84,6 +98,7 @@ const teComputerData = {
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-12T18:00:00" },
+          endsem: { releaseTime: "2025-05-28T13:00:00" },
         },
       },
     },
@@ -92,6 +107,7 @@ const teComputerData = {
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-12T18:00:00" },
+          endsem: { releaseTime: "2025-05-31T13:00:00" },
         },
       },
     },
@@ -113,7 +129,7 @@ async function openRazorpayCheckout(year, subject, examType, examPeriod) {
     const orderResponse = await fetch(`${API_BASE_URL}/razorpay-order`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: 19, currency: "INR", year, subject, examType, examPeriod }),
+      body: JSON.stringify({ amount: 21, currency: "INR", year, subject, examType, examPeriod }),
     });
 
     const orderData = await orderResponse.json();
@@ -210,7 +226,7 @@ const PaperTable = ({ semName, data }) => {
                   <React.Fragment key={exam}>
                     <td className="border p-3 text-center">
                       {subject.exams[exam]?.insem &&
-                      dayjs().isAfter(dayjs(subject.exams[exam].insem.releaseTime)) ? (
+                        dayjs().isAfter(dayjs(subject.exams[exam].insem.releaseTime)) ? (
                         <button
                           onClick={() => openRazorpayCheckout("ThirdYear_Comp", subject.subject, "insem", exam)}
                           className="bg-purple-700 text-white px-4 py-1 rounded hover:bg-purple-800 transition duration-200"
@@ -223,7 +239,7 @@ const PaperTable = ({ semName, data }) => {
                     </td>
                     <td className="border p-3 text-center">
                       {subject.exams[exam]?.endsem &&
-                      dayjs().isAfter(dayjs(subject.exams[exam].endsem.releaseTime)) ? (
+                        dayjs().isAfter(dayjs(subject.exams[exam].endsem.releaseTime)) ? (
                         <button
                           onClick={() => openRazorpayCheckout("ThirdYear_Comp", subject.subject, "endsem", exam)}
                           className="bg-purple-700 text-white px-4 py-1 rounded hover:bg-purple-800 transition duration-200"
@@ -252,6 +268,7 @@ const TEComputer = () => (
     <h1 className="text-2xl font-bold mb-8">Third Year - Computer Engineering</h1>
     <PaperTable semName="Semester 5" data={teComputerData.sem5} />
     <PaperTable semName="Semester 6" data={teComputerData.sem6} />
+    <WhatsAppCommunity />
   </div>
 );
 

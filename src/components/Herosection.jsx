@@ -24,7 +24,7 @@ const HeroSection = () => {
           </p> */}
           <div className="grid grid-cols-2 gap-2 md:gap-0 ">
           
-          <a href="#branches" className="mt-6 text-center justify-center items-center flex gap-2  text-xs md:text-sm bg-gradient-to-r from-blue-700  to-purple-600  text-white cursor-pointer font-semibold py-2 px-4 w-[90%] hover:scale-105 hover:drop-shadow-xl md:px-0  rounded-md transition-all">
+          <a href="https://play.google.com/store/apps/details?id=com.pyqspot.app" className="mt-6 text-center justify-center items-center flex gap-2  text-xs md:text-sm bg-gradient-to-r from-blue-700  to-purple-600  text-white cursor-pointer font-semibold py-2 px-4 w-[90%] hover:scale-105 hover:drop-shadow-xl md:px-0  rounded-md transition-all">
            <FiDownload/> Download App Now
           </a>
 <a href="#branches" className="mt-6 text-center justify-center items-center flex gap-2 md:text-sm text-xs bg-transparent border-2  border-purple-950  text-purple-950 cursor-pointer font-semibold py-2 px-4 w-full md:w-[90%] hover:scale-105 hover:drop-shadow-xl md:px-0  rounded-md transition-all">

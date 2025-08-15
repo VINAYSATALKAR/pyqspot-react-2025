@@ -8,12 +8,12 @@ import Footer from "./components/Footer";
 import './fonts.css'
 import SEComputer from './pages/yearpages/Secomputer';
 import TEComputer from './pages/yearpages/tecomputer';
-import BEComputer from './pages/yearpages/becomputer';
+import BEComputer from './pages/yearpages/Becomputer';
 
 import TEAI from './pages/yearpages/teai';
 import SEAIComponent from "./pages/yearpages/Seai";
 
-import BEAI from './pages/yearpages/beai';
+import BEAI from './pages/yearpages/AidsBE';
 import SEMechanical from './pages/yearpages/semech';
 import TEMechanical from './pages/yearpages/temech';
 import BEMech from './pages/yearpages/Bemech';
@@ -33,7 +33,7 @@ const App = () => {
         <Route path="/becomputer" element={<BEComputer/>} />
         <Route path="/seai" element={<SEAIComponent/>} />
         <Route path="/teai" element={<TEAI/>} />
-        <Route path="/beai" element={<BEAI/>} />
+        <Route path="/beaids" element={<BEAI/>} />
         <Route path="/semechanical" element={<SEMechanical/>} />
         <Route path="/temechanical" element={<TEMechanical/>} />
         <Route path="/bemechanical" element={<BEMech/>} />

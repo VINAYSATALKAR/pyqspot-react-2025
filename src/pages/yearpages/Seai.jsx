@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import dayjs from "dayjs";
+import WhatsAppCommunity from "../../components/WhatsAppCommunity";
 
 // ✅ Set API Base URL using Environment Variable
 const API_BASE_URL = import.meta.env.VITE_API_URL || "https://backend-server-sv2t.onrender.com";
@@ -68,22 +69,18 @@ const seAIData = {
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-12T18:00:00" },
+          endsem: { releaseTime: "2025-05-22T13:00:00" },
+          
         },
       },
     },
-    {
-      subject: "Internet of Things",
-      exams: {
-        "May-June 2024": {
-          insem: { releaseTime: "2024-04-12T18:00:00" },
-        },
-      },
-    },
+   
     {
       subject: "Data Structures and Algorithms",
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-12T18:00:00" },
+          endsem: { releaseTime: "2025-05-25T13:00:00" },
         },
         "Oct-Nov 2023": {
           endsem: { releaseTime: "2024-04-12T18:00:00" },
@@ -95,9 +92,19 @@ const seAIData = {
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-12T18:00:00" },
+          endsem: { releaseTime: "2025-05-27T13:00:00" },
         },
         "Oct-Nov 2023": {
           endsem: { releaseTime: "2024-04-12T18:00:00" },
+        },
+      },
+    },
+     {
+      subject: "Internet of Things",
+      exams: {
+        "May-June 2024": {
+          insem: { releaseTime: "2024-04-12T18:00:00" },
+          endsem: { releaseTime: "2025-05-29T13:00:00" },
         },
       },
     },
@@ -106,6 +113,7 @@ const seAIData = {
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-12T18:00:00" },
+          endsem: { releaseTime: "2025-05-31T13:00:00" },
         },
       },
     },
@@ -267,6 +275,7 @@ const SEAIComponent = () => (
     <h1 className="text-2xl font-bold mb-8">Second Year - AI & DS</h1>
     <PaperTable semName="Semester 3" data={seAIData.sem3} />
     <PaperTable semName="Semester 4" data={seAIData.sem4} />
+    <WhatsAppCommunity/>
   </div>
 );
 

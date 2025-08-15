@@ -9,8 +9,8 @@ const beMechData = {
     {
       subject: "Heating Ventilation Air-Conditioning and Refrigeration",
       exams: {
-        "Nov-Dec 2025": {
-          insem: { releaseTime: "2026-12-01T18:00:00" },
+        "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-18T12:00:00" },
           endsem: { releaseTime: "2026-12-10T18:00:00" },
         },
       },
@@ -18,20 +18,31 @@ const beMechData = {
     {
       subject: "Dynamics of Machinery",
       exams: {
-        "Nov-Dec 2025": {
-          insem: { releaseTime: "2026-12-03T18:00:00" },
+        "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-19T12:00:00" },
+          endsem: { releaseTime: "2026-12-10T18:00:00" },
         },
       },
     },
     {
-      subject: "Turbomachinery",
+      subject: "Industrial Engineering",
       exams: {
-        "May-June 2025": {
-          insem: { releaseTime: "2026-06-18T18:00:00" },
-          endsem: { releaseTime: "2026-06-24T18:00:00" },
+        "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-20T12:00:00" },
+          endsem: { releaseTime: "2026-12-10T18:00:00" },
         },
       },
     },
+    {
+      subject: "Product Design and Development",
+      exams: {
+        "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-21T12:00:00" },
+          endsem: { releaseTime: "2026-12-10T18:00:00" },
+        },
+      },
+    },
+    
   ],
   sem8: [
     {

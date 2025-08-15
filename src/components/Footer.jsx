@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center mt-8 space-x-4">
-          <a  href="https://chat.whatsapp.com/KIAYz1QGwXb40xe5yJdtFv" className="hover:text-gray-300 ">
+          <a  href="https://chat.whatsapp.com/HJ0l5GpnlP0Ix9M9h1Vvef?mode=ac_t" className="hover:text-gray-300 ">
             <i className="fab fa-instagram fa-2x"></i>
             <IoLogoWhatsapp className="md:text-3xl text-2xl hover:text-green-400 hover:scale-120 transition-all"/>
           </a>

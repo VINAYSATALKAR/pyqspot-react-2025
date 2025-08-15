@@ -46,7 +46,7 @@ const Navbar = () => {
 
                     </div>
                    
-                     <a href="#branches" className="text-center hidden md:flex md: justify-center items-center gap-2  text-xs bg-gradient-to-r from-blue-700  to-purple-600  text-white cursor-pointer font-semibold py-2 px-4 w-30 hover:scale-105 hover:drop-shadow-xl md:px-0  rounded-md transition-all">
+                     <a href="https://play.google.com/store/apps/details?id=com.pyqspot.app" className="text-center hidden md:flex md: justify-center items-center gap-2  text-xs bg-gradient-to-r from-blue-700  to-purple-600  text-white cursor-pointer font-semibold py-2 px-4 w-30 hover:scale-105 hover:drop-shadow-xl md:px-0  rounded-md transition-all">
            <FiDownload/> Get App </a>
                 </div>
 

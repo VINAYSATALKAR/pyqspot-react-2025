@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import dayjs from "dayjs";
+import WhatsAppCommunity from "../../components/WhatsAppCommunity";
 
 // ✅ Set API Base URL using Environment Variable
 const API_BASE_URL = import.meta.env.VITE_API_URL || "https://backend-server-sv2t.onrender.com";
@@ -12,6 +13,9 @@ const teMechanicalData = {
         "May-June 2024": {
           endsem: { releaseTime: "2024-04-20T18:00:00" },
         },
+        "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-18T12:00:00" },
+        },
       },
     },
     {
@@ -19,6 +23,9 @@ const teMechanicalData = {
       exams: {
         "May-June 2024": {
           endsem: { releaseTime: "2024-04-11T18:00:00" },
+        },
+        "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-19T12:00:00" },
         },
       },
     },
@@ -28,6 +35,9 @@ const teMechanicalData = {
         "May-June 2024": {
           endsem: { releaseTime: "2024-04-11T18:00:00" },
         },
+        "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-20T12:00:00" },
+        },
       },
     },
     {
@@ -36,6 +46,9 @@ const teMechanicalData = {
         "May-June 2024": {
           endsem: { releaseTime: "2024-04-11T18:00:00" },
         },
+        "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-21T12:00:00" },
+        },
       },
     },
     {
@@ -43,6 +56,9 @@ const teMechanicalData = {
       exams: {
         "May-June 2024": {
           endsem: { releaseTime: "2024-04-11T18:00:00" },
+        },
+        "Oct-Nov 2024": {
+          insem: { releaseTime: "2025-08-22T12:00:00" },
         },
       },
     },
@@ -53,6 +69,8 @@ const teMechanicalData = {
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-12T18:00:00" },
+          endsem: { releaseTime: "2025-05-24T13:00:00" },
+
         },
       },
     },
@@ -61,6 +79,7 @@ const teMechanicalData = {
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-12T18:00:00" },
+          endsem: { releaseTime: "2025-05-26T13:00:00" },
         },
       },
     },
@@ -69,6 +88,7 @@ const teMechanicalData = {
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-12T18:00:00" },
+          endsem: { releaseTime: "2025-05-28T13:00:00" },
         },
       },
     },
@@ -77,6 +97,7 @@ const teMechanicalData = {
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-12T18:00:00" },
+          endsem: { releaseTime: "2025-05-31T13:00:00" },
         },
       },
     },
@@ -98,7 +119,7 @@ async function openRazorpayCheckout(year, subject, examType, examPeriod) {
     const orderResponse = await fetch(`${API_BASE_URL}/razorpay-order`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: 19, currency: "INR", year, subject, examType, examPeriod }),
+      body: JSON.stringify({ amount: 21, currency: "INR", year, subject, examType, examPeriod }),
     });
 
     const orderData = await orderResponse.json();
@@ -237,6 +258,7 @@ const TEMechanical = () => (
     <h1 className="text-2xl font-bold mb-8">Third Year - Mechanical Engineering</h1>
     <PaperTable semName="Semester 5" data={teMechanicalData.sem5} />
     <PaperTable semName="Semester 6" data={teMechanicalData.sem6} />
+    <WhatsAppCommunity/>
   </div>
 );
 

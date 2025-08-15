@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import dayjs from "dayjs";
+import WhatsAppCommunity from "../../components/WhatsAppCommunity";
 
 // ✅ Set API Base URL using Environment Variable
 const API_BASE_URL = import.meta.env.VITE_API_URL || "https://backend-server-sv2t.onrender.com";
@@ -41,26 +42,22 @@ const seMechanicalData = {
   ],
   sem4: [
     {
-      subject: "Engineering Mathematics - III",
-      exams: {
-        "May-June 2024": {
-          insem: { releaseTime: "2024-04-10T18:00:00" },
-        },
-      },
-    },
-    {
       subject: "Kinematics of Machinery",
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-10T18:00:00" },
+          endsem:{ releaseTime: "2025-05-22T13:00:00"},
         },
       },
     },
+   
+    
     {
       subject: "Applied Thermodynamics",
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-10T18:00:00" },
+          endsem:{ releaseTime: "2025-05-25T13:00:00"},
         },
       },
     },
@@ -69,6 +66,7 @@ const seMechanicalData = {
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-10T18:00:00" },
+          endsem:{ releaseTime: "2025-05-27T13:00:00"},
         },
       },
     },
@@ -77,6 +75,16 @@ const seMechanicalData = {
       exams: {
         "May-June 2024": {
           insem: { releaseTime: "2024-04-10T18:00:00" },
+          endsem:{ releaseTime: "2025-05-29T13:00:00"},
+        },
+      },
+    },
+     {
+      subject: "Engineering Mathematics - III",
+      exams: {
+        "May-June 2024": {
+          insem: { releaseTime: "2024-04-10T18:00:00" },
+          endsem:{ releaseTime: "2025-05-31T13:00:00"},
         },
       },
     },
@@ -239,6 +247,7 @@ const SEMechanical = () => (
     <h1 className="text-2xl font-bold mb-8">Second Year - Mechanical Engineering</h1>
     <PaperTable semName="Semester 3" data={seMechanicalData.sem3} />
     <PaperTable semName="Semester 4" data={seMechanicalData.sem4} />
+    <WhatsAppCommunity/>
   </div>
 );
 
