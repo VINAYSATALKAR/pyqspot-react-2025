@@ -37,7 +37,7 @@ const beComputerData = {
       subject: "Cyber Security and Digital Forensics",
       exams: {
         "May-June 2025": {
-          insem: { releaseTime: "2027-08-21T12:00:00" },
+          insem: { releaseTime: "2024-08-21T12:00:00" },
           endsem: { releaseTime: "2025-12-18T14:00:00" },
         },
       },
@@ -46,7 +46,7 @@ const beComputerData = {
       subject: "Software Testing and Quality Assurance",
       exams: {
         "May-June 2025": {
-          insem: { releaseTime: "2027-08-22T12:00:00" },
+          insem: { releaseTime: "2024-08-22T12:00:00" },
           endsem: { releaseTime: "2025-12-21T14:00:00" },
         },
       },
