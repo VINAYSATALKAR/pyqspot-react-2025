@@ -144,7 +144,7 @@ async function openRazorpayCheckout(year, subject, examType, examPeriod) {
     const orderResponse = await fetch(`${API_BASE_URL}/razorpay-order`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: 19, currency: "INR", year, subject, examType, examPeriod }),
+      body: JSON.stringify({ amount: 25, currency: "INR", year, subject, examType, examPeriod }),
     });
 
     const orderData = await orderResponse.json();

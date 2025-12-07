@@ -9,44 +9,45 @@ const beComputerData = {
     {
       subject: "Design and Analysis of Algorithm",
       exams: {
-        "Oct-Nov 2024": {
+        "May-June 2025": {
           insem: { releaseTime: "2025-08-18T12:00:00" },
-          endsem: { releaseTime: "2027-06-20T18:00:00" },
+          endsem: { releaseTime: "2025-12-11T14:00:00" },
         },
       },
     },
     {
       subject: "Machine Learning",
       exams: {
-        "Oct-Nov 2024": {
+        "May-June 2025": {
           insem: { releaseTime: "2025-08-19T12:00:00" },
+          endsem: { releaseTime: "2025-12-13T14:00:00" },
         },
       },
     },
     {
       subject: "Blockchain Technology",
       exams: {
-        "Oct-Nov 2024": {
+        "May-June 2025": {
           insem: { releaseTime: "2025-08-20T12:00:00" },
-          endsem: { releaseTime: "2027-06-21T18:00:00" },
+          endsem: { releaseTime: "2025-12-16T14:00:00" },
         },
       },
     },
     {
       subject: "Cyber Security and Digital Forensics",
       exams: {
-        "Oct-Nov 2024": {
+        "May-June 2025": {
           insem: { releaseTime: "2027-08-21T12:00:00" },
-          endsem: { releaseTime: "2027-06-21T18:00:00" },
+          endsem: { releaseTime: "2025-12-18T14:00:00" },
         },
       },
     },
     {
       subject: "Software Testing and Quality Assurance",
       exams: {
-        "Oct-Nov 2024": {
+        "May-June 2025": {
           insem: { releaseTime: "2027-08-22T12:00:00" },
-          endsem: { releaseTime: "2027-06-21T18:00:00" },
+          endsem: { releaseTime: "2025-12-21T14:00:00" },
         },
       },
     },
@@ -55,18 +56,13 @@ const beComputerData = {
     {
       subject: "High Performance Computing",
       exams: {
-        "May-June 2025": {
-          insem: { releaseTime: "2027-06-25T18:00:00" },
-          endsem: { releaseTime: "2027-06-30T18:00:00" },
-        },
+        
       },
     },
     {
       subject: "Deep Learning",
       exams: {
-        "May-June 2025": {
-          insem: { releaseTime: "2027-06-28T18:00:00" },
-        },
+        
       },
     },
   ],
@@ -87,7 +83,7 @@ async function openRazorpayCheckout(year, subject, examType, examPeriod) {
     const orderResponse = await fetch(`${API_BASE_URL}/razorpay-order`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: 21, currency: "INR", year, subject, examType, examPeriod }),
+      body: JSON.stringify({ amount: 25, currency: "INR", year, subject, examType, examPeriod }),
     });
 
     const orderData = await orderResponse.json();

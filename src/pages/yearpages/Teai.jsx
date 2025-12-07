@@ -13,6 +13,7 @@ const thirdYearAIData = {
         "May-June 2024": { endsem: { releaseTime: "2024-06-04T18:00:00" } },
         "Oct-Nov 2023": { insem: { releaseTime: "2024-06-04T18:00:00" } },
         "Oct-Nov 2024": { insem: { releaseTime: "2025-08-18T12:00:00" } },
+        "May-June 2025": { endsem: { releaseTime: "2025-12-10T10:00:00" } },
       },
     },
     {
@@ -21,6 +22,7 @@ const thirdYearAIData = {
         "May-June 2024": { endsem: { releaseTime: "2024-06-12T18:00:00" } },
         "Oct-Nov 2023": { insem: { releaseTime: "2024-06-06T18:00:00" } },
         "Oct-Nov 2024": { insem: { releaseTime: "2025-08-19T12:00:00" } },
+        "May-June 2025": { endsem: { releaseTime: "2025-12-12T10:00:00" } },
       },
     },
     {
@@ -29,6 +31,7 @@ const thirdYearAIData = {
         "May-June 2024": { endsem: { releaseTime: "2024-06-12T18:00:00" } },
         "Oct-Nov 2023": { insem: { releaseTime: "2024-06-06T18:00:00" } },
         "Oct-Nov 2024": { insem: { releaseTime: "2025-08-20T12:00:00" } },
+        "May-June 2025": { endsem: { releaseTime: "2025-12-15T10:00:00" } },
       },
     },
     {
@@ -37,6 +40,7 @@ const thirdYearAIData = {
         "May-June 2024": { endsem: { releaseTime: "2024-06-12T18:00:00" } },
         "Oct-Nov 2023": { insem: { releaseTime: "2024-06-06T18:00:00" } },
         "Oct-Nov 2024": { insem: { releaseTime: "2025-08-21T12:00:00" } },
+        "May-June 2025": { endsem: { releaseTime: "2025-12-17T10:00:00" } },
       },
     },
   ],
@@ -90,7 +94,7 @@ async function openRazorpayCheckout(year, subject, examType, examPeriod) {
     const orderResponse = await fetch(`${API_BASE_URL}/razorpay-order`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: 21, currency: "INR", year, subject, examType, examPeriod }),
+      body: JSON.stringify({ amount: 25, currency: "INR", year, subject, examType, examPeriod }),
     });
 
     const orderData = await orderResponse.json();

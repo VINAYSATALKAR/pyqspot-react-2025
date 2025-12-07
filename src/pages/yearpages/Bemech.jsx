@@ -11,7 +11,9 @@ const beMechData = {
       exams: {
         "Oct-Nov 2024": {
           insem: { releaseTime: "2025-08-18T12:00:00" },
-          endsem: { releaseTime: "2026-12-10T18:00:00" },
+        },
+        "May-June 2025": {
+          endsem: { releaseTime: "2025-12-11T14:00:00" },
         },
       },
     },
@@ -20,7 +22,9 @@ const beMechData = {
       exams: {
         "Oct-Nov 2024": {
           insem: { releaseTime: "2025-08-19T12:00:00" },
-          endsem: { releaseTime: "2026-12-10T18:00:00" },
+        },
+        "May-June 2025": {
+          endsem: { releaseTime: "2025-12-14T14:00:00" },
         },
       },
     },
@@ -29,7 +33,9 @@ const beMechData = {
       exams: {
         "Oct-Nov 2024": {
           insem: { releaseTime: "2025-08-20T12:00:00" },
-          endsem: { releaseTime: "2026-12-10T18:00:00" },
+        },
+        "May-June 2025": {
+          endsem: { releaseTime: "2025-12-18T14:00:00" },
         },
       },
     },
@@ -38,11 +44,13 @@ const beMechData = {
       exams: {
         "Oct-Nov 2024": {
           insem: { releaseTime: "2025-08-21T12:00:00" },
-          endsem: { releaseTime: "2026-12-10T18:00:00" },
+        },
+        "May-June 2025": {
+          endsem: { releaseTime: "2025-12-21T14:00:00" },
         },
       },
     },
-    
+
   ],
   sem8: [
     {
@@ -80,7 +88,7 @@ async function openRazorpayCheckout(year, subject, examType, examPeriod) {
     const orderResponse = await fetch(`${API_BASE_URL}/razorpay-order`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: 19, currency: "INR", year, subject, examType, examPeriod }),
+      body: JSON.stringify({ amount: 25, currency: "INR", year, subject, examType, examPeriod }),
     });
 
     const orderData = await orderResponse.json();
@@ -176,7 +184,7 @@ const PaperTable = ({ semName, data }) => {
                   <React.Fragment key={exam}>
                     <td className="border p-3 text-center">
                       {subject.exams[exam]?.insem?.releaseTime &&
-                      dayjs().isAfter(dayjs(subject.exams[exam].insem.releaseTime)) ? (
+                        dayjs().isAfter(dayjs(subject.exams[exam].insem.releaseTime)) ? (
                         <button
                           onClick={() => openRazorpayCheckout("BE_Mech", subject.subject, "insem", exam)}
                           className="bg-purple-700 text-white px-4 py-1 rounded hover:bg-purple-800 transition duration-200"
@@ -189,7 +197,7 @@ const PaperTable = ({ semName, data }) => {
                     </td>
                     <td className="border p-3 text-center">
                       {subject.exams[exam]?.endsem?.releaseTime &&
-                      dayjs().isAfter(dayjs(subject.exams[exam].endsem.releaseTime)) ? (
+                        dayjs().isAfter(dayjs(subject.exams[exam].endsem.releaseTime)) ? (
                         <button
                           onClick={() => openRazorpayCheckout("BE_Mech", subject.subject, "endsem", exam)}
                           className="bg-purple-700 text-white px-4 py-1 rounded hover:bg-purple-800 transition duration-200"
