@@ -11,7 +11,7 @@ const beComputerData = {
       exams: {
         "May-June 2025": {
           insem: { releaseTime: "2025-08-18T12:00:00" },
-          endsem: { releaseTime: "2025-12-11T14:00:00" },
+          endsem: { releaseTime: "2025-12-10T18:00:00" },
         },
       },
     },
@@ -20,7 +20,7 @@ const beComputerData = {
       exams: {
         "May-June 2025": {
           insem: { releaseTime: "2025-08-19T12:00:00" },
-          endsem: { releaseTime: "2025-12-13T14:00:00" },
+          endsem: { releaseTime: "2025-12-13T18:00:00" },
         },
       },
     },
@@ -29,7 +29,7 @@ const beComputerData = {
       exams: {
         "May-June 2025": {
           insem: { releaseTime: "2025-08-20T12:00:00" },
-          endsem: { releaseTime: "2025-12-16T14:00:00" },
+          endsem: { releaseTime: "2025-12-15T18:00:00" },
         },
       },
     },
@@ -38,7 +38,7 @@ const beComputerData = {
       exams: {
         "May-June 2025": {
           insem: { releaseTime: "2024-08-21T12:00:00" },
-          endsem: { releaseTime: "2025-12-18T14:00:00" },
+          endsem: { releaseTime: "2025-12-17T18:00:00" },
         },
       },
     },
@@ -47,7 +47,7 @@ const beComputerData = {
       exams: {
         "May-June 2025": {
           insem: { releaseTime: "2024-08-22T12:00:00" },
-          endsem: { releaseTime: "2025-12-21T14:00:00" },
+          endsem: { releaseTime: "2025-12-20T18:00:00" },
         },
       },
     },

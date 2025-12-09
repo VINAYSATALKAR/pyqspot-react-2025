@@ -20,7 +20,7 @@ const teComputerData = {
           insem: { releaseTime: "2025-08-18T12:00:00" },
         },
         "May-June 2025": {
-          endsem: { releaseTime: "2025-12-10T10:00:00" },
+          endsem: { releaseTime: "2025-12-09T18:00:00" },
         },
       },
     },
@@ -36,7 +36,7 @@ const teComputerData = {
           insem: { releaseTime: "2025-08-19T12:00:00" },
         },
         "May-June 2025": {
-          endsem: { releaseTime: "2025-12-12T10:00:00" },
+          endsem: { releaseTime: "2025-12-11T18:00:00" },
         },
       },
     },
@@ -52,7 +52,7 @@ const teComputerData = {
           insem: { releaseTime: "2025-08-20T12:00:00" },
         },
         "May-June 2025": {
-          endsem: { releaseTime: "2025-12-17T10:00:00" },
+          endsem: { releaseTime: "2025-12-16T18:00:00" },
         },
       },
     },
@@ -68,7 +68,7 @@ const teComputerData = {
           insem: { releaseTime: "2025-08-21T12:00:00" },
         },
         "May-June 2025": {
-          endsem: { releaseTime: "2025-12-15T10:00:00" },
+          endsem: { releaseTime: "2025-12-14T18:00:00" },
         },
       },
     },
@@ -84,7 +84,15 @@ const teComputerData = {
           insem: { releaseTime: "2025-08-22T12:00:00" },
         },
         "May-June 2025": {
-          endsem: { releaseTime: "2025-12-19T10:00:00" },
+          endsem: { releaseTime: "2025-12-18T18:00:00" },
+        },
+      },
+    },
+    {
+      subject: "Human Computer Interface",
+      exams: {
+        "May-June 2025": {
+          endsem: { releaseTime: "2025-12-18T18:00:00" },
         },
       },
     },

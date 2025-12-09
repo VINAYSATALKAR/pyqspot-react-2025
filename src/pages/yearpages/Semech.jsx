@@ -8,6 +8,14 @@ const API_BASE_URL = import.meta.env.VITE_API_URL || "https://backend-server-sv2
 const seMechanicalData = {
   sem3: [
     {
+      subject: "Solid Mechanics",
+      exams: {
+        "May-June 2024": {
+          endsem: { releaseTime: "2024-04-11T18:00:00" },
+        },
+      },
+    },
+    {
       subject: "Solid Modelling and Drafting",
       exams: {
         "Oct-Nov 2023": {

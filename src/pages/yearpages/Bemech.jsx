@@ -13,7 +13,7 @@ const beMechData = {
           insem: { releaseTime: "2025-08-18T12:00:00" },
         },
         "May-June 2025": {
-          endsem: { releaseTime: "2025-12-11T14:00:00" },
+          endsem: { releaseTime: "2025-12-10T18:00:00" },
         },
       },
     },
@@ -24,7 +24,15 @@ const beMechData = {
           insem: { releaseTime: "2025-08-19T12:00:00" },
         },
         "May-June 2025": {
-          endsem: { releaseTime: "2025-12-14T14:00:00" },
+          endsem: { releaseTime: "2025-12-13T18:00:00" },
+        },
+      },
+    },
+    {
+      subject: "Turbo Machinery",
+      exams: {
+        "May-June 2025": {
+          endsem: { releaseTime: "2025-12-15T18:00:00" },
         },
       },
     },
@@ -35,7 +43,7 @@ const beMechData = {
           insem: { releaseTime: "2025-08-20T12:00:00" },
         },
         "May-June 2025": {
-          endsem: { releaseTime: "2025-12-18T14:00:00" },
+          endsem: { releaseTime: "2025-12-17T18:00:00" },
         },
       },
     },
@@ -46,7 +54,7 @@ const beMechData = {
           insem: { releaseTime: "2025-08-21T12:00:00" },
         },
         "May-June 2025": {
-          endsem: { releaseTime: "2025-12-21T14:00:00" },
+          endsem: { releaseTime: "2025-12-20T18:00:00" },
         },
       },
     },
