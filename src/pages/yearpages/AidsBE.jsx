@@ -55,20 +55,37 @@ const beAIData = {
     {
       subject: "Computational Intelligence",
       exams: {
-        "April-May 2026": {
-          insem: { releaseTime: "2027-04-21T18:00:00" },
-          endsem: { releaseTime: "2027-04-30T18:00:00" },
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-07T16:00:00" },
         },
       },
     },
     {
       subject: "Distributed Computing",
       exams: {
-        "April-May 2026": {
-          insem: { releaseTime: "2027-04-23T18:00:00" },
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-09T16:00:00" },
         },
       },
     },
+    {
+      subject: "Deep Learning",
+      exams: {
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-10T16:00:00" },
+        },
+        
+      },
+    },
+    {
+      subject: "Business Intelligence",
+      exams: {
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-12T16:00:00" },
+        },
+        
+      },
+    }
   ],
 };
 

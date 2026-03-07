@@ -30,6 +30,22 @@ const firstYearData = {
         },
       },
     },
+    {
+      subject: "Basic Electrical Engineering",
+      exams: {
+        "Oct-Nov 2024": {
+          endsem: { releaseTime: "2025-05-28T12:00:00" },
+        },
+      },
+    },
+    {
+      subject: "Engineering Chemistry",
+      exams: {
+        "Oct-Nov 2024": {
+          endsem: { releaseTime: "2025-05-28T12:00:00" },
+        },
+      },
+    },
   ],
   sem2: [],
 };

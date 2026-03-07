@@ -56,12 +56,36 @@ const beComputerData = {
     {
       subject: "High Performance Computing",
       exams: {
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-07T16:00:00" },
+        },
         
       },
     },
     {
       subject: "Deep Learning",
       exams: {
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-09T16:00:00" },
+        },
+        
+      },
+    },
+    {
+      subject: "Natural Language Processing",
+      exams: {
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-10T16:00:00" },
+        },
+        
+      },
+    },
+    {
+      subject: "Business Intelligence",
+      exams: {
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-12T16:00:00" },
+        },
         
       },
     },

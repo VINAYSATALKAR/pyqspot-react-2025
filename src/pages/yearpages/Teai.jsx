@@ -46,7 +46,7 @@ const thirdYearAIData = {
     {
       subject: "Human Computer Interface",
       exams: {
-       "May-June 2025": {
+        "May-June 2025": {
           endsem: { releaseTime: "2025-12-18T18:00:00" },
         },
       },
@@ -56,32 +56,51 @@ const thirdYearAIData = {
     {
       subject: "Data Science",
       exams: {
-        "May-June 2024": { 
+        "May-June 2024": {
           insem: { releaseTime: "2024-06-17T18:00:00" },
-          endsem:{releaseTime:"2025-05-24T13:00:00"}
-       },
+          endsem: { releaseTime: "2025-05-24T13:00:00" }
+        },
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-07T16:00:00" },
+        },
       },
+
     },
     {
       subject: "Cyber Security",
       exams: {
-        "May-June 2024": { insem: { releaseTime: "2024-06-17T18:00:00" },
-          endsem:{releaseTime:"2025-05-26T13:00:00"} },
+        "May-June 2024": {
+          insem: { releaseTime: "2024-06-17T18:00:00" },
+          endsem: { releaseTime: "2025-05-26T13:00:00" }
+        },
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-09T16:00:00" },
+        },
       },
     },
     {
       subject: "Artificial Neural Network",
       exams: {
-        "May-June 2024": { insem: { releaseTime: "2024-06-17T18:00:00" } ,
-          endsem:{releaseTime:"2025-05-28T13:00:00"}},
+        "May-June 2024": {
+          insem: { releaseTime: "2024-06-17T18:00:00" },
+          endsem: { releaseTime: "2025-05-28T13:00:00" }
+        },
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-10T16:00:00" },
+        },
       },
     },
     {
       subject: "Cloud Computing (Elective)",
       exams: {
-        "May-June 2024": { insem: { releaseTime: "2024-06-17T18:00:00" }
-      ,
-          endsem:{releaseTime:"2025-05-31T13:00:00"} },
+        "May-June 2024": {
+          insem: { releaseTime: "2024-06-17T18:00:00" }
+          ,
+          endsem: { releaseTime: "2025-05-31T13:00:00" }
+        },
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-11T16:00:00" },
+        },
       },
     },
   ],
@@ -199,7 +218,7 @@ const PaperTable = ({ semName, data }) => {
                   <React.Fragment key={exam}>
                     <td className="border p-3 text-center">
                       {subject.exams[exam]?.insem &&
-                      dayjs().isAfter(dayjs(subject.exams[exam].insem.releaseTime)) ? (
+                        dayjs().isAfter(dayjs(subject.exams[exam].insem.releaseTime)) ? (
                         <button
                           onClick={() => openRazorpayCheckout("ThirdYear_AI", subject.subject, "insem", exam)}
                           className="bg-purple-700 text-white px-4 py-1 rounded hover:bg-purple-800 transition duration-200"
@@ -212,7 +231,7 @@ const PaperTable = ({ semName, data }) => {
                     </td>
                     <td className="border p-3 text-center">
                       {subject.exams[exam]?.endsem &&
-                      dayjs().isAfter(dayjs(subject.exams[exam].endsem.releaseTime)) ? (
+                        dayjs().isAfter(dayjs(subject.exams[exam].endsem.releaseTime)) ? (
                         <button
                           onClick={() => openRazorpayCheckout("ThirdYear_AI", subject.subject, "endsem", exam)}
                           className="bg-purple-700 text-white px-4 py-1 rounded hover:bg-purple-800 transition duration-200"
@@ -241,7 +260,7 @@ const ThirdYearAI = () => (
     <h1 className="text-2xl font-bold mb-8">Third Year - AI & DS</h1>
     <PaperTable semName="Semester 5" data={thirdYearAIData.sem5} />
     <PaperTable semName="Semester 6" data={thirdYearAIData.sem6} />
-    <WhatsAppCommunity/>
+    <WhatsAppCommunity />
   </div>
 );
 

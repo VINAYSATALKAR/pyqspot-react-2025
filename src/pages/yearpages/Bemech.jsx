@@ -64,20 +64,35 @@ const beMechData = {
     {
       subject: "Computer Integrated Manufacturing",
       exams: {
-        "April-May 2026": {
-          insem: { releaseTime: "2026-04-22T18:00:00" },
-          endsem: { releaseTime: "2026-05-01T18:00:00" },
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-07T16:00:00" },
         },
       },
     },
     {
       subject: "Energy Engineering",
       exams: {
-        "April-May 2026": {
-          insem: { releaseTime: "2026-04-24T18:00:00" },
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-09T16:00:00" },
         },
       },
     },
+    {
+      subject: "Energy Audit and Management",
+      exams: {
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-10T16:00:00" },
+        },
+      },
+    },
+    {
+      subject: "Industrial Psychology and Organizational Behaviour",
+      exams: {
+        "May-June 2025": {
+          insem: { releaseTime: "2026-03-10T16:00:00" },
+        },
+      },
+    }
   ],
 };
 
