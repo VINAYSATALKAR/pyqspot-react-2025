@@ -107,6 +107,7 @@ const teComputerData = {
         },
         "May-June 2025": {
           insem: { releaseTime: "2026-03-07T16:00:00" },
+          endsem: { releaseTime: "2026-05-30T12:00:00" }
         },
       },
     },
@@ -119,6 +120,7 @@ const teComputerData = {
         },
         "May-June 2025": {
           insem: { releaseTime: "2026-03-09T16:00:00" },
+          endsem: { releaseTime: "2026-06-03T12:00:00" }
         },
       },
     },
@@ -131,6 +133,7 @@ const teComputerData = {
         },
         "May-June 2025": {
           insem: { releaseTime: "2026-03-10T16:00:00" },
+          endsem: { releaseTime: "2026-06-05T12:00:00" }
         },
       },
     },
@@ -143,6 +146,7 @@ const teComputerData = {
         },
         "May-June 2025": {
           insem: { releaseTime: "2026-03-11T16:00:00" },
+          endsem: { releaseTime: "2026-06-08T12:00:00" }
         },
       },
     },

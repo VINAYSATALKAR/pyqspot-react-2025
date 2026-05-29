@@ -58,8 +58,9 @@ const beComputerData = {
       exams: {
         "May-June 2025": {
           insem: { releaseTime: "2026-03-07T16:00:00" },
+          endsem: { releaseTime: "2026-05-30T12:00:00" },
         },
-        
+
       },
     },
     {
@@ -67,8 +68,9 @@ const beComputerData = {
       exams: {
         "May-June 2025": {
           insem: { releaseTime: "2026-03-09T16:00:00" },
+          endsem: { releaseTime: "2026-06-02T12:00:00" },
         },
-        
+
       },
     },
     {
@@ -76,8 +78,9 @@ const beComputerData = {
       exams: {
         "May-June 2025": {
           insem: { releaseTime: "2026-03-10T16:00:00" },
+          endsem: { releaseTime: "2026-06-05T12:00:00" },
         },
-        
+
       },
     },
     {
@@ -85,8 +88,9 @@ const beComputerData = {
       exams: {
         "May-June 2025": {
           insem: { releaseTime: "2026-03-12T16:00:00" },
+          endsem: { releaseTime: "2026-06-09T12:00:00" },
         },
-        
+
       },
     },
   ],
@@ -204,7 +208,7 @@ const PaperTable = ({ semName, data }) => {
                   <React.Fragment key={exam}>
                     <td className="border p-3 text-center">
                       {subject.exams[exam]?.insem &&
-                      dayjs().isAfter(dayjs(subject.exams[exam].insem.releaseTime)) ? (
+                        dayjs().isAfter(dayjs(subject.exams[exam].insem.releaseTime)) ? (
                         <button
                           onClick={() => openRazorpayCheckout("BE_Comp", subject.subject, "insem", exam)}
                           className="bg-purple-700 text-white px-4 py-1 rounded hover:bg-purple-800 transition duration-200"
@@ -217,7 +221,7 @@ const PaperTable = ({ semName, data }) => {
                     </td>
                     <td className="border p-3 text-center">
                       {subject.exams[exam]?.endsem &&
-                      dayjs().isAfter(dayjs(subject.exams[exam].endsem.releaseTime)) ? (
+                        dayjs().isAfter(dayjs(subject.exams[exam].endsem.releaseTime)) ? (
                         <button
                           onClick={() => openRazorpayCheckout("BE_Comp", subject.subject, "endsem", exam)}
                           className="bg-purple-700 text-white px-4 py-1 rounded hover:bg-purple-800 transition duration-200"

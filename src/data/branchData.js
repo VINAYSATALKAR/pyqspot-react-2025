@@ -12,6 +12,17 @@ export const branchData = [
     ],
   },
   {
+    branch: 'Electronics and Computer Engineering',
+    slug: 'Ece',
+    years: [
+      {
+        label: 'Final Year',
+        image: '/images/ece.png',
+        link: '/BeEce',
+      },
+    ]
+  },
+  {
     branch: 'Computer Engineering',
     slug: 'computer',
     years: [

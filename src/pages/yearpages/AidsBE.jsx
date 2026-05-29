@@ -57,6 +57,7 @@ const beAIData = {
       exams: {
         "May-June 2025": {
           insem: { releaseTime: "2026-03-07T16:00:00" },
+          endsem: { releaseTime: "2026-05-30T12:00:00" },
         },
       },
     },
@@ -65,6 +66,7 @@ const beAIData = {
       exams: {
         "May-June 2025": {
           insem: { releaseTime: "2026-03-09T16:00:00" },
+          endsem: { releaseTime: "2026-06-02T12:00:00" },
         },
       },
     },
@@ -73,6 +75,7 @@ const beAIData = {
       exams: {
         "May-June 2025": {
           insem: { releaseTime: "2026-03-10T16:00:00" },
+          endsem: { releaseTime: "2026-06-05T12:00:00" },
         },
         
       },
@@ -82,6 +85,7 @@ const beAIData = {
       exams: {
         "May-June 2025": {
           insem: { releaseTime: "2026-03-12T16:00:00" },
+          endsem: { releaseTime: "2026-06-09T12:00:00" },
         },
         
       },

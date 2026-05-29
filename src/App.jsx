@@ -18,6 +18,7 @@ import SEMechanical from './pages/yearpages/semech';
 import TEMechanical from './pages/yearpages/temech';
 import BEMech from './pages/yearpages/Bemech';
 import FirstYear from './pages/yearpages/FisrtYear';
+import BEEce from './pages/yearpages/BeECE';
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/temechanical" element={<TEMechanical/>} />
         <Route path="/bemechanical" element={<BEMech/>} />
         <Route path="/firstyear" element={<FirstYear/>} />
+        <Route path="/BeEce" element={<BEEce/>} />
       </Routes>
       <Footer />
  
