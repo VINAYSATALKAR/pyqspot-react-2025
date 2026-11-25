@@ -155,7 +155,7 @@ async function openRazorpayCheckout(year, subject, examType, examPeriod) {
     console.log("✅ Razorpay Order Created:", orderData.order);
 
     const options = {
-      key: "rzp_live_wiHVaRq4BJpVc8",
+      key: "rzp_live_U3tfBpYspqSh3y",
       amount: orderData.order.amount,
       currency: orderData.order.currency,
       order_id: orderData.order.id,
